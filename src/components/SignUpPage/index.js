@@ -17,7 +17,8 @@ let emailErrorMsg
 
 const letters = /^[A-Za-z]+$/
 const numbers = /^[0-9]+$/
-// const emailRegex = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/
+const emailRegex = /^[a-zA-Z0-9+_.-]+@+[a-zA-Z0-9]+.+[a-z]+$/
+
 
 class SignUpPage extends Component {
   state = {
@@ -61,9 +62,10 @@ class SignUpPage extends Component {
     if (email === '') {
       this.setState({blurEmail: true})
       emailErrorMsg = 'Email should not be empty'
-      // } else if (email.match(email) === false) {
-      //   emailErrorMsg = 'Please enter Valid Email Address'
-      // } else {
+      } else if (emailRegex.test(email) === false) {
+        this.setState({blurEmail: true})
+        emailErrorMsg = 'Please enter Valid Email Address'
+      } else {
       this.setState({blurEmail: false})
     }
   }
@@ -88,7 +90,7 @@ class SignUpPage extends Component {
     const {lastName} = this.state
     if (lastName === '') {
       this.setState({blurLastName: true})
-      lastNameErrorMsg = 'last Name should not be empty'
+      lastNameErrorMsg = 'Last Name should not be empty'
     } else if (lastName.length < 4) {
       this.setState({blurLastName: true})
       lastNameErrorMsg = 'Last Name should consist of minimum 4 letters'
