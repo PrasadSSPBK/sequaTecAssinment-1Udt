@@ -1,0 +1,99 @@
+.border {
+  border: 2px solid red;
+}
+
+.label {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto';
+}
+.labelCheck {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto';
+}
+.emailContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: black;
+  border: none;
+
+  background-color: transparent;
+}
+.checkContainer {
+  margin: 10px;
+}
+.input {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Roboto';
+}
+.inputCheck {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Roboto';
+}
+
+.form {
+  background-color: aqua;
+  height: 70%;
+  width: 400px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+}
+.colContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-image: url('https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg');
+}
+.link {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.linkHead {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Roboto';
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: transparent;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+}
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  padding-right: 5px;
+  padding-left: 5px;
+}
